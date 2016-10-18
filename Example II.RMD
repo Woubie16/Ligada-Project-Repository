@@ -1,0 +1,48 @@
+---
+title: "Ligada_Example"
+author: "Woubie"
+date: "17 October 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Biscate.co.mz and the Mozambican labour market
+
+Biscate.co.mz is a platform created by UX, an award-winning Mozambican company that develops locally-relevant, market-driven, and self-sustainable tech-based products and services for high social and economic impact in emerging markets. Biscate.co.mz is a platform that aims to connect blue-collar workers, like e.g. carpenters and painters, to clients that require their services. 
+
+This document presents some preliminary analysis of some initial data gathered through this platform
+
+
+#Education Level of Workers Registered
+
+```{r worker_1_data, echo=FALSE}
+plot(education_name, main="Education Level of Workers", xlab="Education Level",ylab="Number of People")
+```
+
+#Experience Level of Workers Registered
+
+```{r worker_1_data, echo=FALSE}
+plot(experience_name, main="Years of Work", xlab="Number of Year of Work Experience Level", ylab="Number of People")
+```
+
+#Summary of Price Score
+
+```{r worker_1_data, echo=FALSE}
+summary(price_score)
+```
+#Summary of Quality Score 
+
+```{r worker_1_data, echo=FALSE}
+summary(quality_score)
+```
+
+#Quality vs Price Plot
+
+```{r , echo=FALSE}
+plot(quality_score, price_score)
+```
+
