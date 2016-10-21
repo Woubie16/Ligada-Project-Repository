@@ -28,6 +28,10 @@ workers$profession_name <- as.factor(workers$profession_name)
 workers$user_status <- as.factor(workers$user_status)
 
 ```
+#Structure of Dataset
+```{r, echo=FALSE}
+str(workers)
+```
 
 #Education Level of Workers Registered
 
