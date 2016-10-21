@@ -16,33 +16,45 @@ Biscate.co.mz is a platform created by UX, an award-winning Mozambican company t
 
 This document presents some preliminary analysis of some initial data gathered through this platform
 
+```{r}
+setwd("C:/Users/Woubie/Documents/Github/My-Project")
+workers <- read.csv("workers_1_data.csv")
+#Changing the following variables to factors 
+workers$experience_name <- as.factor(workers$experience_name)
+workers$education_name <- as.factor(workers$education_name)
+workers$district_name <- as.factor(workers$district_name)
+workers$province_name <- as.factor(workers$province_name)
+workers$profession_name <- as.factor(workers$profession_name)
+workers$user_status <- as.factor(workers$user_status)
+
+```
 
 #Education Level of Workers Registered
 
-```{r worker_1_data, echo=FALSE}
-plot(education_name, main="Education Level of Workers", xlab="Education Level",ylab="Number of People")
+```{r, echo=FALSE}
+plot(workers$education_name, main="Education Level of Workers", xlab="Education Level",ylab="Number of People")
 ```
 
 #Experience Level of Workers Registered
 
-```{r worker_1_data, echo=FALSE}
-plot(experience_name, main="Years of Work", xlab="Number of Year of Work Experience Level", ylab="Number of People")
+```{r, echo=FALSE}
+plot(workers$experience_name, main="Years of Work", xlab="Number of Year of Work Experience Level", ylab="Number of People")
 ```
 
 #Summary of Price Score
 
-```{r worker_1_data, echo=FALSE}
-summary(price_score)
+```{r, echo=FALSE}
+summary(workers$price_score)
 ```
 #Summary of Quality Score 
 
-```{r worker_1_data, echo=FALSE}
-summary(quality_score)
+```{r, echo=FALSE}
+summary(workers$quality_score)
 ```
 
 #Quality vs Price Plot
 
-```{r , echo=FALSE}
-plot(quality_score, price_score)
+```{r, echo=FALSE}
+plot(workers$quality_score, workers$price_score)
 ```
 
