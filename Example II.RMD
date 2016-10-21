@@ -14,7 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Biscate.co.mz is a platform created by UX, an award-winning Mozambican company that develops locally-relevant, market-driven, and self-sustainable tech-based products and services for high social and economic impact in emerging markets. Biscate.co.mz is a platform that aims to connect blue-collar workers, like e.g. carpenters and painters, to clients that require their services. 
 
-This document presents some preliminary analysis of some initial data gathered through this platform
 
 ```{r}
 setwd("C:/Users/Woubie/Documents/Github/My-Project")
