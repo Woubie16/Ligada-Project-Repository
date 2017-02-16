@@ -1,7 +1,8 @@
+#Rmarkdown Test File 
 ---
-title: "Ligada_Example"
-author: "Woubie"
-date: "17 October 2016"
+title: "Ligada Rmarkdown Example"
+author: "Woubedle Alemayehu"
+date: "16 February 2016"
 output: html_document
 ---
 
@@ -16,8 +17,10 @@ Biscate.co.mz is a platform created by UX, an award-winning Mozambican company t
 
 
 ```{r}
+#Change the working directory for the dataset prior to running this file
 setwd("C:/Users/Woubie/Documents/Github/My-Project")
 workers <- read.csv("workers_1_data.csv")
+
 #Changing the following variables to factors 
 workers$experience_name <- as.factor(workers$experience_name)
 workers$education_name <- as.factor(workers$education_name)
@@ -32,13 +35,13 @@ workers$user_status <- as.factor(workers$user_status)
 str(workers)
 ```
 
-#Education Level of Workers Registered
+#Education Level of Workers 
 
 ```{r, echo=FALSE}
 plot(workers$education_name, main="Education Level of Workers", xlab="Education Level",ylab="Number of People")
 ```
 
-#Experience Level of Workers Registered
+#Experience Level of Workers 
 
 ```{r, echo=FALSE}
 plot(workers$experience_name, main="Years of Work", xlab="Number of Year of Work Experience Level", ylab="Number of People")
